@@ -29,6 +29,7 @@
 }
 
 .btn {
+    font-family: "Literal Regular";
     background: #6AAE55;
     border-radius: 10px;
     padding: 13px 60px;
@@ -487,6 +488,96 @@ label {
     color: #828282
 }
 
+/* footer section */
+.footer-navbar{
+    background-color: #746471;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 0;
+    list-style: none;
+}
+
+.footer-nav__item {
+    text-decoration: none;
+    font-family: "Literal Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+}
+
+footer {
+    padding-top: 28px;
+    background-color: #5B4A58;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul h3 {
+    font-family: 'Literal Regular';
+    font-size: 18px;
+    line-height: 24px;
+    color: #6AAE55;
+    margin-bottom: 17px;
+}
+
+footer ul li {
+    font-family: "Literal Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+footer ul li span span {
+    margin-left: 28px;
+}
+footer ul li i {
+    margin-right: 10px;
+}
+
+.faq div {
+    display: inline-block;
+}
+
+.faq label {
+    color: #fff;
+    display: block;
+}
+.faq input{
+    font-size: 16px;
+    width: 100%;
+}
+.faq textarea {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.faq a {
+    margin-top: 10px;
+    float: right;
+    text-transform: capitalize;
+}
+
+footer p {
+    font-family: 'Literal';
+    font-size: 16px;
+    line-height: 100%;
+    color: #A69BA4;
+    text-align: center;
+    padding: 20px 0;
+}
+
 /* RESPONSIVE PART */
 @media only screen and (max-width: 1200px) {
     .container{
@@ -520,7 +611,27 @@ label {
     }
     .nav-items :nth-child(1){
         display: inline-block;
-
+    }
+    .footer-nav {
+        display: block;
+        text-align: center;
+    }
+    .footer-nav li {
+        margin-bottom: 14px;
+    }
+    .footer-items {
+        display: block;
+    }
+    .faq div {
+        display: block;
+        width: 50%;
+    }
+    .faq textarea {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .faq a {
+        float: none;
     }
 } 
 @media only screen and (max-width: 767px) {
@@ -555,6 +666,13 @@ label {
     .photos {
         text-align: center;
     }
+    .faq div {
+        width: 60%;
+    }
+    .faq textarea {
+        width: 60%;
+    }
+
 }
 
 @media only screen and (max-width: 635px){
@@ -564,6 +682,7 @@ label {
     .icon-sort {
         display: block;
     }
+    .faq 
 }
 
 @media only screen and (max-width: 567px) {
@@ -637,6 +756,12 @@ label {
     .testimonials-header {
         margin-top: 5rem;
     }
+    .faq div {
+        width: 80%;
+    }
+    .faq textarea {
+        width: 80%;
+    }
 }
 @media only screen and (max-width: 450px) {
     .about {
@@ -644,6 +769,12 @@ label {
     }
     .photos img {
         margin-left: 0px;
+    }
+    .faq div {
+        width: 90%;
+    }
+    .faq textarea {
+        width: 90%;
     }
 }
 @media only screen and (max-width: 330px){
@@ -658,5 +789,11 @@ label {
     }
     .photos-header a{
         font-size: 12px;
+    }
+    .faq div {
+        width: 100%;
+    }
+    .faq textarea {
+        width: 100%;
     }
 }
