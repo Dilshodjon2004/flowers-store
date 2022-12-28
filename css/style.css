@@ -473,7 +473,19 @@ label {
     margin: 10px 0;
 }
 
+/* info section */
+.info {
+    margin-top: 120px;
+    padding: 60px 0;
+    background-color: #f0f0f0;
+}
 
+.info p {
+    font-family: "Literal Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: #828282
+}
 
 /* RESPONSIVE PART */
 @media only screen and (max-width: 1200px) {
