@@ -1,453 +1,593 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/shared.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Цветочная лавка</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- /Loader -->
+
     <!-- navbar -->
     <header>
-        <div class="contact-nav">
-            <div class="container">
-                <ul class="contact-nav__items">
-                    <li class="contact-nav__item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p><span class="green-text">г. Владивосток,</span> ул. Пушкинская, 17 А</p>
-                    </li>
-                    <li class="contact-nav__item">
-                        <i class="fa-solid fa-phone green-text"></i>
-                        <p class="phoneNumbers"><span class="whatsapp">whatsapp</span>
-                            <span>+7 808 353 53 35</span>  <span>+7 888 888 88 88</span></p>
-                    </li>
-                    <li class="contact-nav__item">
-                        <img src="./images/Vector-1.svg" class="logo-nav" alt="">
-                        <p>150 000 руб.</p>
-                    </li>
-                </ul>
-            </div>
+      <div class="contact-nav">
+        <div class="container">
+          <ul class="contact-nav__items">
+            <li class="contact-nav__item">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>
+                <span class="green-text">г. Владивосток,</span> ул. Пушкинская,
+                17 А
+              </p>
+            </li>
+            <li class="contact-nav__item">
+              <i class="fa-solid fa-phone green-text"></i>
+              <p class="phoneNumbers">
+                <span class="whatsapp">whatsapp</span>
+                <span>+7 808 353 53 35</span> <span>+7 888 888 88 88</span>
+              </p>
+            </li>
+            <li class="contact-nav__item">
+              <img src="./images/Vector-1.svg" class="logo-nav" alt="" />
+              <p>150 000 руб.</p>
+            </li>
+          </ul>
         </div>
-        <nav>
-            <div class="container">
-                <ul class="nav-items">
-                    <li class="nav-item hamb-menu"><i class="fa-solid fa-bars"></i>МЕНЮ</li>
-                    <li class="nav-item">Каталог</li>
-                    <li class="nav-item">Отзывы</li>
-                    <li class="nav-item">Контакты</li>
-                    <a href="#"><img src="./images/Лого.png" alt=""></a>
-                    <li class="nav-item">Информация для клиента</li>
-                    <li class="nav-item"><i class="fa-regular fa-circle-user"></i>Мои заказы</li>
-                    <li class="nav-item"><p>руб. <br> дол.</p></li>
-                </ul>
-            </div>
-        </nav>
+      </div>
+      <nav>
+        <div class="container">
+          <ul class="nav-items">
+            <li class="nav-item hamb-menu">
+              <i class="fa-solid fa-bars"></i>МЕНЮ
+            </li>
+            <li class="nav-item">Каталог</li>
+            <li class="nav-item">Отзывы</li>
+            <li class="nav-item">Контакты</li>
+            <a href="#"><img src="./images/Лого.png" alt="" /></a>
+            <li class="nav-item">Информация для клиента</li>
+            <li class="nav-item">
+              <i class="fa-regular fa-circle-user"></i>Мои заказы
+            </li>
+            <li class="nav-item">
+              <p>
+                руб. <br />
+                дол.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <!-- /header -->
 
     <!-- hero section -->
     <section class="hero">
-        <div class="container">
-            <h2><span class="green-text">Доставка</span> цветов в городе</h2>
-            <h1>Владивосток</h1>
-            <a href="./product.html" class="btn">Каталог</a>
-        </div>
+      <div class="container">
+        <h2><span class="green-text">Доставка</span> цветов в городе</h2>
+        <h1>Владивосток</h1>
+        <a href="./product.html" class="btn">Каталог</a>
+      </div>
     </section>
     <!-- /hero section -->
 
     <!-- service section -->
     <section class="service">
-        <div class="container">
-            <div class="cards">
-                <div class="card">
-                    <img src="./images/01.png" alt="">
-                    <p>
-                        <span class="green-text">Бесплатная</span> доставка по городу
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./images/02.png" alt="">
-                    <p>
-                        Открытка <span class="green-text">в подароки</span> фото вручения
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./images/03.png" alt="">
-                    <p>
-                        <span class="green-text">Круглосуточная</span> доставка
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./images/04.png" alt="">
-                    <p>
-                        Накопительная система <span class="green-text">скидок</span>
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <img src="./images/01.png" alt="" />
+            <p><span class="green-text">Бесплатная</span> доставка по городу</p>
+          </div>
+          <div class="card">
+            <img src="./images/02.png" alt="" />
+            <p>
+              Открытка <span class="green-text">в подароки</span> фото вручения
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/03.png" alt="" />
+            <p><span class="green-text">Круглосуточная</span> доставка</p>
+          </div>
+          <div class="card">
+            <img src="./images/04.png" alt="" />
+            <p>Накопительная система <span class="green-text">скидок</span></p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- service section -->
 
     <!-- products section -->
     <section class="products">
-        <div class="container">
-            <div class="product-type">
-                <ul>
-                    <li>Сортировать по:</li>
-                    <li><a href="#" class="active" style="text-decoration: underline;">Новизне</a></li>
-                    <li><a href="#">Цена по возростанию</a></li>
-                    <li><a href="#">Цена по убыванию</a></li>
-                    <li><a href="#">Популярности</a></li>
-                </ul>
-                <input type="text" class="icon-sort" placeholder="Сортирока/фильтр/поиск" style="font-size: 16px; color: #BDBDBD;">
-                <div class="product-cards">
-                    <div class="product-card">
-                        <img src="./images/Rectangle 6flower-1.png" alt="">
-                        <div class="product-text">
-                            <h3>Букет из разноцветных роз</h3>
-                            <p>Стоимость: <span>от 23 000 руб.</span></p>
-                            <a href="#">В корзину</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="./images/Rectangle 6-floweer-2.png" alt="">
-                        <div class="product-text">
-                            <h3>Букет из разноцветных роз</h3>
-                        <p>Стоимость: <span>от 15 000 руб.</span></p>
-                        <a href="#">В корзину</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="./images/Rectangle 6-floweer-3.png" alt="">
-                        <div class="product-text">
-                            <h3>Букет из разноцветных роз</h3>
-                        <p>Стоимость: <span>от 23 000 руб.</span></p>
-                        <a href="#">В корзину</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="./images/Rectangle 6-flower-4.png" alt="">
-                        <div class="product-text">
-                            <h3>Букет из разноцветных роз</h3>
-                        <p>Стоимость: <span>от 23 000 руб.</span></p>
-                        <a href="#">В корзину</a>
-                        </div>
-                    </div><div class="product-card">
-                        <img src="./images/Rectangle 6-flower-5.png" alt="">
-                        <div class="product-text">
-                            <h3>Букет из разноцветных роз</h3>
-                        <p>Стоимость: <span>от 23 000 руб.</span></p>
-                        <a href="#">В корзину</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="./images/Rectangle 6-flower-6.png" alt="">
-                        <div class="product-text">
-                            <h3>Букет из разноцветных роз</h3>
-                        <p>Стоимость: <span>от 23 000 руб.</span></p>
-                        <a href="#">В корзину</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="./images/Rectangle 6-flower-7.png" alt="">
-                        <div class="product-text">
-                            <h3>Букет из разноцветных роз</h3>
-                        <p>Стоимость: <span>от 23 000 руб.</span></p>
-                        <a href="#">В корзину</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="./images/Rectangle 6-flower-8.png" alt="">
-                        <div class="product-text">
-                            <h3>Букет из разноцветных роз</h3>
-                        <p>Стоимость: <span>от 23 000 руб.</span></p>
-                        <a href="#">В корзину</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="./images/Rectangle 6-flower-9.png" alt="">
-                        <div class="product-text">
-                            <h3>Букет из разноцветных роз</h3>
-                        <p>Стоимость: <span>от 23 000 руб.</span></p>
-                        <a href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="show-more">Показать еще</a>
+      <div class="container">
+        <div class="product-type">
+          <ul>
+            <li>Сортировать по:</li>
+            <li>
+              <a href="#" class="active" style="text-decoration: underline"
+                >Новизне</a
+              >
+            </li>
+            <li><a href="#">Цена по возростанию</a></li>
+            <li><a href="#">Цена по убыванию</a></li>
+            <li><a href="#">Популярности</a></li>
+          </ul>
+          <input
+            type="text"
+            class="icon-sort"
+            placeholder="Сортирока/фильтр/поиск"
+            style="font-size: 16px; color: #bdbdbd"
+          />
+          <div class="product-cards">
+            <div class="product-card">
+              <img src="./images/Rectangle 6flower-1.png" alt="" />
+              <div class="product-text">
+                <h3>Букет из разноцветных роз</h3>
+                <p>Стоимость: <span>от 23 000 руб.</span></p>
+                <a href="#">В корзину</a>
+              </div>
             </div>
-            <div class="product-features">
-                <div class="search-container">
-                    <form action="#">
-                        <input type="text" class="icon-rtl" placeholder="Поиск" style="font-size: 16px; color: #BDBDBD;" name="search">
-                    </form>
-                </div>
-                <div class="product-prices">
-                    <h3>Стоимость:</h3>
-                    <form action="#">
-                        <input type="checkbox" id="price1" name="price1" value="price1">
-                        <label for="price1"> до 2500 руб.</label><br>
-                        <input type="checkbox" id="price2" name="price2" value="price2">
-                        <label for="price2"> 2500 - 4000 руб.</label><br>
-                        <input type="checkbox" id="price3" name="price3" value="price3">
-                        <label for="price3"> 4000 - 6000 руб.</label><br>
-                        <input type="checkbox" id="price4" name="price4" value="price4">
-                        <label for="price4"> от 6000 руб.</label><br>
-                      </form> 
-                </div>
-                <div class="product-types">
-                    <h3>Букет с ...</h3>
-                    <form action="#">
-                        <input type="checkbox" id="flower1" name="flower1" value="flower1">
-                        <label for="flower1"> Розами</label><br>
-                        <input type="checkbox" id="flower2" name="flower2" value="flower2">
-                        <label for="flower2"> Тюльпанами</label><br>
-                        <input type="checkbox" id="flower3" name="flower3" value="flower3">
-                        <label for="flower3"> Гортензиями </label><br>
-                        <input type="checkbox" id="flower4" name="flower4" value="flower4">
-                        <label for="flower4"> Подсолнухами</label><br>
-                        <input type="checkbox" id="flower5" name="flower5" value="flower5">
-                        <label for="flower5"> Орхидеями</label><br>
-                        <input type="checkbox" id="flower6" name="flower6" value="flower6">
-                        <label for="flower6"> Ирисами</label><br>
-                        <input type="checkbox" id="flower7" name="flower7" value="flower7">
-                        <label for="flower7"> Лилиями</label><br>
-                        <input type="checkbox" id="flower8" name="flower8" value="flower8">
-                        <label for="flower8"> Герберами</label><br>
-                        <h3>Показать еще</h3>
-                    </form> 
-                </div>
-                <div class="product-box">
-                    <h3>Цветы упаковано</h3>
-                    <form action="#">
-                        <input type="checkbox" id="box1" name="box1" value="box1">
-                        <label for="box1"> Букетом</label><br>
-                        <input type="checkbox" id="box2" name="box2" value="box2">
-                        <label for="box2"> В корзине</label><br>
-                        <input type="checkbox" id="box3" name="box3" value="box3">
-                        <label for="box3"> В коробке</label><br>
-                      </form> 
-                </div>
-                <div class="product-color">
-                    <h3>Цветовая гамма</h3>
-                    <input type="checkbox" id="box1" name="box1" value="box1">
-                    <label for="box1"> Белая</label><br>
-                    <input type="checkbox" id="box3" name="box3" value="box3">
-                    <label for="box3"> Розовая</label><br>
-                    <input type="checkbox" id="box3" name="box3" value="box3">
-                    <label for="box3"> Красная</label><br>
-                    <input type="checkbox" id="box3" name="box3" value="box3">
-                    <label for="box3"> Желтая</label><br>
-                    <input type="checkbox" id="box3" name="box3" value="box3">
-                    <label for="box3"> Оранжевая</label><br>
-                    <input type="checkbox" id="box3" name="box3" value="box3">
-                    <label for="box3"> Бордовая</label><br>
-                    <input type="checkbox" id="box3" name="box3" value="box3">
-                    <label for="box3"> Синяя</label><br>
-                    <input type="checkbox" id="box3" name="box3" value="box3">
-                    <label for="box3"> Фиолетовая</label><br>
-                
-                </div>
+            <div class="product-card">
+              <img src="./images/Rectangle 6-floweer-2.png" alt="" />
+              <div class="product-text">
+                <h3>Букет из разноцветных роз</h3>
+                <p>Стоимость: <span>от 15 000 руб.</span></p>
+                <a href="#">В корзину</a>
+              </div>
             </div>
+            <div class="product-card">
+              <img src="./images/Rectangle 6-floweer-3.png" alt="" />
+              <div class="product-text">
+                <h3>Букет из разноцветных роз</h3>
+                <p>Стоимость: <span>от 23 000 руб.</span></p>
+                <a href="#">В корзину</a>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="./images/Rectangle 6-flower-4.png" alt="" />
+              <div class="product-text">
+                <h3>Букет из разноцветных роз</h3>
+                <p>Стоимость: <span>от 23 000 руб.</span></p>
+                <a href="#">В корзину</a>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="./images/Rectangle 6-flower-5.png" alt="" />
+              <div class="product-text">
+                <h3>Букет из разноцветных роз</h3>
+                <p>Стоимость: <span>от 23 000 руб.</span></p>
+                <a href="#">В корзину</a>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="./images/Rectangle 6-flower-6.png" alt="" />
+              <div class="product-text">
+                <h3>Букет из разноцветных роз</h3>
+                <p>Стоимость: <span>от 23 000 руб.</span></p>
+                <a href="#">В корзину</a>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="./images/Rectangle 6-flower-7.png" alt="" />
+              <div class="product-text">
+                <h3>Букет из разноцветных роз</h3>
+                <p>Стоимость: <span>от 23 000 руб.</span></p>
+                <a href="#">В корзину</a>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="./images/Rectangle 6-flower-8.png" alt="" />
+              <div class="product-text">
+                <h3>Букет из разноцветных роз</h3>
+                <p>Стоимость: <span>от 23 000 руб.</span></p>
+                <a href="#">В корзину</a>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="./images/Rectangle 6-flower-9.png" alt="" />
+              <div class="product-text">
+                <h3>Букет из разноцветных роз</h3>
+                <p>Стоимость: <span>от 23 000 руб.</span></p>
+                <a href="#">В корзину</a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="show-more">Показать еще</a>
         </div>
+        <div class="product-features">
+          <div class="search-container">
+            <form action="#">
+              <input
+                type="text"
+                class="icon-rtl"
+                placeholder="Поиск"
+                style="font-size: 16px; color: #bdbdbd"
+                name="search"
+              />
+            </form>
+          </div>
+          <div class="product-prices">
+            <h3>Стоимость:</h3>
+            <form action="#">
+              <input type="checkbox" id="price1" name="price1" value="price1" />
+              <label for="price1"> до 2500 руб.</label><br />
+              <input type="checkbox" id="price2" name="price2" value="price2" />
+              <label for="price2"> 2500 - 4000 руб.</label><br />
+              <input type="checkbox" id="price3" name="price3" value="price3" />
+              <label for="price3"> 4000 - 6000 руб.</label><br />
+              <input type="checkbox" id="price4" name="price4" value="price4" />
+              <label for="price4"> от 6000 руб.</label><br />
+            </form>
+          </div>
+          <div class="product-types">
+            <h3>Букет с ...</h3>
+            <form action="#">
+              <input
+                type="checkbox"
+                id="flower1"
+                name="flower1"
+                value="flower1"
+              />
+              <label for="flower1"> Розами</label><br />
+              <input
+                type="checkbox"
+                id="flower2"
+                name="flower2"
+                value="flower2"
+              />
+              <label for="flower2"> Тюльпанами</label><br />
+              <input
+                type="checkbox"
+                id="flower3"
+                name="flower3"
+                value="flower3"
+              />
+              <label for="flower3"> Гортензиями </label><br />
+              <input
+                type="checkbox"
+                id="flower4"
+                name="flower4"
+                value="flower4"
+              />
+              <label for="flower4"> Подсолнухами</label><br />
+              <input
+                type="checkbox"
+                id="flower5"
+                name="flower5"
+                value="flower5"
+              />
+              <label for="flower5"> Орхидеями</label><br />
+              <input
+                type="checkbox"
+                id="flower6"
+                name="flower6"
+                value="flower6"
+              />
+              <label for="flower6"> Ирисами</label><br />
+              <input
+                type="checkbox"
+                id="flower7"
+                name="flower7"
+                value="flower7"
+              />
+              <label for="flower7"> Лилиями</label><br />
+              <input
+                type="checkbox"
+                id="flower8"
+                name="flower8"
+                value="flower8"
+              />
+              <label for="flower8"> Герберами</label><br />
+              <h3>Показать еще</h3>
+            </form>
+          </div>
+          <div class="product-box">
+            <h3>Цветы упаковано</h3>
+            <form action="#">
+              <input type="checkbox" id="box1" name="box1" value="box1" />
+              <label for="box1"> Букетом</label><br />
+              <input type="checkbox" id="box2" name="box2" value="box2" />
+              <label for="box2"> В корзине</label><br />
+              <input type="checkbox" id="box3" name="box3" value="box3" />
+              <label for="box3"> В коробке</label><br />
+            </form>
+          </div>
+          <div class="product-color">
+            <h3>Цветовая гамма</h3>
+            <input type="checkbox" id="box1" name="box1" value="box1" />
+            <label for="box1"> Белая</label><br />
+            <input type="checkbox" id="box3" name="box3" value="box3" />
+            <label for="box3"> Розовая</label><br />
+            <input type="checkbox" id="box3" name="box3" value="box3" />
+            <label for="box3"> Красная</label><br />
+            <input type="checkbox" id="box3" name="box3" value="box3" />
+            <label for="box3"> Желтая</label><br />
+            <input type="checkbox" id="box3" name="box3" value="box3" />
+            <label for="box3"> Оранжевая</label><br />
+            <input type="checkbox" id="box3" name="box3" value="box3" />
+            <label for="box3"> Бордовая</label><br />
+            <input type="checkbox" id="box3" name="box3" value="box3" />
+            <label for="box3"> Синяя</label><br />
+            <input type="checkbox" id="box3" name="box3" value="box3" />
+            <label for="box3"> Фиолетовая</label><br />
+          </div>
+        </div>
+      </div>
     </section>
     <!-- /products section -->
 
     <!-- about -->
     <section class="about">
-        <div class="container">
-            <div class="about-cards">
-                <div class="about-card">
-                    <img src="./images/1.png" alt="">
-                    <div class="about-card-text">
-                        <h3>Выберите букет;</h3>
-                        <p>В каталоге выберите понравившийся букет;</p>
-                    </div>
-                </div>
-                <div class="about-card">
-                    <img src="./images/2.png" alt="">
-                    <div class="about-card-text">
-                        <h3>Выберите размер и дополнение;</h3>
-                        <p>На странице с описанием букета выберите подходящий размер. По желанию, добавьте к букету мягкую игрушку, сладости или любой другой подарок;</p>
-                    </div>
-                </div>
-                <div class="about-card">
-                    <img src="./images/3.png" alt="">
-                    <div class="about-card-text">
-                        <h3>Укажите данные для доставки;</h3>
-                        <p>Заполните форму доставки и оплатите заказ удобным для вас способом;</p>
-                    </div>
-                </div>
-                <div class="about-card">
-                    <img src="./images/4.png" alt="">
-                    <div class="about-card-text">
-                        <h3>Букет готов!</h3>
-                        <p>Букет будет собран из свежайших цветов и доставлен получателю к указанной дате и времени.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="about-cards">
+          <div class="about-card">
+            <img src="./images/1.png" alt="" />
+            <div class="about-card-text">
+              <h3>Выберите букет;</h3>
+              <p>В каталоге выберите понравившийся букет;</p>
             </div>
+          </div>
+          <div class="about-card">
+            <img src="./images/2.png" alt="" />
+            <div class="about-card-text">
+              <h3>Выберите размер и дополнение;</h3>
+              <p>
+                На странице с описанием букета выберите подходящий размер. По
+                желанию, добавьте к букету мягкую игрушку, сладости или любой
+                другой подарок;
+              </p>
+            </div>
+          </div>
+          <div class="about-card">
+            <img src="./images/3.png" alt="" />
+            <div class="about-card-text">
+              <h3>Укажите данные для доставки;</h3>
+              <p>
+                Заполните форму доставки и оплатите заказ удобным для вас
+                способом;
+              </p>
+            </div>
+          </div>
+          <div class="about-card">
+            <img src="./images/4.png" alt="" />
+            <div class="about-card-text">
+              <h3>Букет готов!</h3>
+              <p>
+                Букет будет собран из свежайших цветов и доставлен получателю к
+                указанной дате и времени.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- /about -->
 
     <!-- comments section -->
     <section class="comments">
-        <div class="container">
-            <div class="comments-photos">
-                <div class="photos-header">
-                    <h2><span>фото</span>хвасты</h2>
-                <a href="#">Больше фото</a>
-                </div>
-                <div class="photos">
-                    <span>
-                        <img src="./images/Rectangle 11-small.png" alt="">
-                        <img src="./images/Rectangle 11.1-small.png" alt="">
-                    </span>
-                    <br>
-                    <span>
-                        <img src="./images/Rectangle 11.2-small.png" alt="">
-                        <img src="./images/Rectangle 11.3-small.png" alt="">
-                    </span>
-                </div>
-            </div>
-            <div class="testimonials">
-                <div class="testimonialss">
-                    <div class="testimonials-header">
-                        <h2>Отзывы</h2>
-                        <a href="#">Смотреть все</a>
-                    </div>
-                    <div class="testimonial-comment">
-                        <div class="about-testimonial">
-                            <div class="testimonial">
-                                <h3>Анатолий Петров</h3>
-                                <div class="div">
-                                    <p class="time">20.08.19  22:32</p>
-                                    <p class="location">г. Москва</p>
-                                </div>
-                            </div>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p>Огромное спасибо флористам! Остались очень довольны оказанными услугами,мастера своего дела! Букетик даже неожиданно красивее чем на картинке</p>
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="testimonial-comment">
-                        <div class="about-testimonial">
-                            <div class="testimonial">
-                                <h3>Анатолий Петров</h3>
-                                <div class="div">
-                                    <p class="time">20.08.19  22:32</p>
-                                    <p class="location">г. Москва</p>
-                                </div>
-                            </div>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p>Огромное спасибо флористам! Остались очень довольны оказанными услугами,мастера своего дела! Букетик даже неожиданно красивее чем на картинке</p>
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="testimonial-comment">
-                        <div class="about-testimonial">
-                            <div class="testimonial">
-                                <h3>Анатолий Петров</h3>
-                                <div class="div">
-                                    <p class="time">20.08.19  22:32</p>
-                                    <p class="location">г. Москва</p>
-                                </div>
-                            </div>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p>Огромное спасибо флористам! Остались очень довольны оказанными услугами,мастера своего дела! Букетик даже неожиданно красивее чем на картинке</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="comments-photos">
+          <div class="photos-header">
+            <h2><span>фото</span>хвасты</h2>
+            <a href="#">Больше фото</a>
+          </div>
+          <div class="photos">
+            <span>
+              <img src="./images/Rectangle 11-small.png" alt="" />
+              <img src="./images/Rectangle 11.1-small.png" alt="" />
+            </span>
+            <br />
+            <span>
+              <img src="./images/Rectangle 11.2-small.png" alt="" />
+              <img src="./images/Rectangle 11.3-small.png" alt="" />
+            </span>
+          </div>
         </div>
+        <div class="testimonials">
+          <div class="testimonialss">
+            <div class="testimonials-header">
+              <h2>Отзывы</h2>
+              <a href="#">Смотреть все</a>
+            </div>
+            <div class="testimonial-comment">
+              <div class="about-testimonial">
+                <div class="testimonial">
+                  <h3>Анатолий Петров</h3>
+                  <div class="div">
+                    <p class="time">20.08.19 22:32</p>
+                    <p class="location">г. Москва</p>
+                  </div>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="comment">
+                <p>
+                  Огромное спасибо флористам! Остались очень довольны оказанными
+                  услугами,мастера своего дела! Букетик даже неожиданно красивее
+                  чем на картинке
+                </p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="testimonial-comment">
+              <div class="about-testimonial">
+                <div class="testimonial">
+                  <h3>Анатолий Петров</h3>
+                  <div class="div">
+                    <p class="time">20.08.19 22:32</p>
+                    <p class="location">г. Москва</p>
+                  </div>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="comment">
+                <p>
+                  Огромное спасибо флористам! Остались очень довольны оказанными
+                  услугами,мастера своего дела! Букетик даже неожиданно красивее
+                  чем на картинке
+                </p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="testimonial-comment">
+              <div class="about-testimonial">
+                <div class="testimonial">
+                  <h3>Анатолий Петров</h3>
+                  <div class="div">
+                    <p class="time">20.08.19 22:32</p>
+                    <p class="location">г. Москва</p>
+                  </div>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="comment">
+                <p>
+                  Огромное спасибо флористам! Остались очень довольны оказанными
+                  услугами,мастера своего дела! Букетик даже неожиданно красивее
+                  чем на картинке
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- /comments section -->
 
     <!-- info section -->
     <section class="info">
-        <div class="container">
-            <p>Букеты создаются максимально похожими на фотографию с сайта. Приведенные примеры букетов являются возможными вариантами составления цветочных композиций, так как они изготавливаются вручную флористами, и поэтому возможно незначительное отклонение по форме от фотографии на сайте. При этом возможна замена по количеству, ассортименту и составу цветов, в зависимости от сезонности, наличия цветов в том или ином регионе и других факторов на равноценные им по качеству и стоимости. Это позволит нам выполнить заказ без задержек.</p>
-            <p>По России и странам СНГ доставка букета возможна в день оформления и оплаты заказа. По странам дальнего зарубежья доставка возможна через 2—3 рабочих дня после оплаты.</p>
-            <p>Ближайшая дата и время доставки будут отображаться на странице оформления заказа с учетом выбранного города доставки. Мы рекомендуем оформлять и оплачивать заказы заранее, особенно в праздничный период. Более подробную информацию смотрите на страницеrr</p>
-        </div>
+      <div class="container">
+        <p>
+          Букеты создаются максимально похожими на фотографию с сайта.
+          Приведенные примеры букетов являются возможными вариантами составления
+          цветочных композиций, так как они изготавливаются вручную флористами,
+          и поэтому возможно незначительное отклонение по форме от фотографии на
+          сайте. При этом возможна замена по количеству, ассортименту и составу
+          цветов, в зависимости от сезонности, наличия цветов в том или ином
+          регионе и других факторов на равноценные им по качеству и стоимости.
+          Это позволит нам выполнить заказ без задержек.
+        </p>
+        <p>
+          По России и странам СНГ доставка букета возможна в день оформления и
+          оплаты заказа. По странам дальнего зарубежья доставка возможна через
+          2—3 рабочих дня после оплаты.
+        </p>
+        <p>
+          Ближайшая дата и время доставки будут отображаться на странице
+          оформления заказа с учетом выбранного города доставки. Мы рекомендуем
+          оформлять и оплачивать заказы заранее, особенно в праздничный период.
+          Более подробную информацию смотрите на страницеrr
+        </p>
+      </div>
     </section>
     <!-- /info section -->
 
     <!-- footer section -->
     <div class="footer-navbar">
-        <div class="container">
-            <ul class="footer-nav">
-                <li><a href="#" class="footer-nav__item">Каталог</a></li>
-                <li><a href="#" class="footer-nav__item">Скидки</a></li>
-                <li><a href="#" class="footer-nav__item">Отзывы</a></li>
-                <li><a href="#" class="footer-nav__item">Контакты</a></li>
-                <li><a href="#" class="footer-nav__item">Оферта</a></li>
-                <li><a href="#" class="footer-nav__item">Информация для клиента</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul class="footer-nav">
+          <li><a href="#" class="footer-nav__item">Каталог</a></li>
+          <li><a href="#" class="footer-nav__item">Скидки</a></li>
+          <li><a href="#" class="footer-nav__item">Отзывы</a></li>
+          <li><a href="#" class="footer-nav__item">Контакты</a></li>
+          <li><a href="#" class="footer-nav__item">Оферта</a></li>
+          <li>
+            <a href="#" class="footer-nav__item">Информация для клиента</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <footer>
-        <div class="container">
-            <div class="footer-items">
-                <ul class="contacts">
-                    <li><h3>Контактная информация</h3></li>
-                    <li><i class="fa-solid fa-location-dot"></i>г. Владивосток, ул. Пушкинская, 17</li>
-                    <li><i class="fa-solid fa-phone"></i>+7 888 888 88 88</li>
-                    <li><i class="fa-solid fa-phone"></i>+7 888 888 88 88</li>
-                    <li><i class="fa-regular fa-clock clock"></i><span>Режим работы: <br>
-                        <span>Пн-Сб  с 8:00  до 22:00</span></span></li>
-                </ul>
-                <ul class="links">
-                    <li><h3>Для посетителей</h3></li>
-                    <li>Оформление заказа</li>
-                    <li>Вопросы и ответы</li>
-                    <li>Изменение или отмена заказа</li>
-                    <li>Способы доставки и оплаты</li>
-                </ul>
-                <ul class="faq">
-                    <li><h3>Возникли вопросы? Свяжитесь с нами</h3></li>
-                    <div>
-                        <label for="username">Ваше имя</label>
-                        <input type="text" name="username" id="username">
-                    </div>
-                    <div>
-                        <label for="phoneNumber">Моб. номер</label>
-                        <input type="number" name="phoneNumber" id="phoneNumber">
-                    </div>
-                    <textarea name="message" id="message" rows="5"></textarea>
-                    <a href="#" class="btn">Отправить</a>
-                </ul>
+      <div class="container">
+        <div class="footer-items">
+          <ul class="contacts">
+            <li><h3>Контактная информация</h3></li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>г. Владивосток, ул.
+              Пушкинская, 17
+            </li>
+            <li><i class="fa-solid fa-phone"></i>+7 888 888 88 88</li>
+            <li><i class="fa-solid fa-phone"></i>+7 888 888 88 88</li>
+            <li>
+              <i class="fa-regular fa-clock clock"></i
+              ><span
+                >Режим работы: <br />
+                <span>Пн-Сб с 8:00 до 22:00</span></span
+              >
+            </li>
+          </ul>
+          <ul class="links">
+            <li><h3>Для посетителей</h3></li>
+            <li>Оформление заказа</li>
+            <li>Вопросы и ответы</li>
+            <li>Изменение или отмена заказа</li>
+            <li>Способы доставки и оплаты</li>
+          </ul>
+          <ul class="faq">
+            <li><h3>Возникли вопросы? Свяжитесь с нами</h3></li>
+            <div>
+              <label for="username">Ваше имя</label>
+              <input type="text" name="username" id="username" />
             </div>
+            <div>
+              <label for="phoneNumber">Моб. номер</label>
+              <input type="number" name="phoneNumber" id="phoneNumber" />
+            </div>
+            <textarea name="message" id="message" rows="5"></textarea>
+            <a href="#" class="btn">Отправить</a>
+          </ul>
         </div>
-        <div class="line"></div>
-        <p>&copy; 2022 Цветочная лавка.</p>
+      </div>
+      <div class="line"></div>
+      <p>&copy; 2022 Цветочная лавка.</p>
     </footer>
     <!-- /footer section -->
-</body>
+
+    <script src="./js/app.js"></script>
+  </body>
 </html>
